@@ -1,0 +1,29 @@
+@import url('style.css');
+
+body {
+	background: #003 url('blueGradient.png') !important;
+}
+
+#logo {
+	background: url('blueLogo.png') no-repeat !important;
+}
+
+#name a {
+	color: #089BFF !important;
+}
+
+#name a:hover {
+	color: #6EC4FF !important;
+}
+
+#content p a {
+	color: #008 !important;
+}
+
+#content p a:hover {
+	color: #00E !important;
+}
+
+a.show_tweet {
+	color: #008 !important;
+}

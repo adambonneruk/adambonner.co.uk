@@ -1,0 +1,272 @@
+/**
+ * Adam Bonner | Online Portfolio Style Sheet
+ * http://adambonner.co.uk
+ * 8th November 2012
+ */
+
+/* Directives ********************************************************************************/
+
+@import url('css-reset.css');
+
+@font-face {
+ font-family: Eurostile;
+ src: url("EUROSTI.EOT") /* IE Fix*/
+}
+@font-face {
+ font-family: Eurostile;
+ src: url("EUROSTI.TTF")
+}
+
+/* Body **************************************************************************************/
+
+body {
+	color: #FFF;
+	font-family: Eurostile, sans-serif;
+}
+
+a {
+	text-decoration:none;
+	outline : none;
+}
+
+#container {
+	position: relative;
+	max-width: 866px;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #0D0000; /* IE Fix*/
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #000;
+	border-radius: 5px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+/* Header ************************************************************************************/
+
+#header {
+    width: 100%;
+	overflow: hidden;
+	color: #FFF !important;
+	margin-bottom: 15px;
+}
+
+#header h1 {
+	font-size: 36px;
+}
+
+#logo {
+	float:left;
+	height: 128px;
+	width: 128px;
+	border-radius: 5px;
+}
+
+#name {
+	float:left;
+	height: 109px;
+	margin-left: 15px;
+	padding-top: 19px;
+}
+
+#name a:hover {
+	text-decoration:underline;
+}
+
+/* Content ***********************************************************************************/
+
+#content {
+	background: #EEE;
+	padding: 15px;
+	padding-bottom: 0px !important;
+	margin-bottom: 15px;
+	border-radius: 5px;	
+}
+
+#content p {
+	text-decoration:none;
+	text-align: left;
+	margin-bottom: 0.5em;
+}
+
+#content p img {
+	float: left;
+	border-radius: 5px;	
+	margin: 0px 8px 8px 0px;
+}
+
+#content p a:hover {
+	text-decoration: underline;
+}
+
+#portfolio {
+    width: 100%;
+	overflow: hidden;
+}
+
+#portfolio  a {
+	float: left;
+	width: 261px;
+	height: 215px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	text-decoration:none;
+	text-align: left;
+	color: #000;
+	padding-left: 5px;
+	padding-top: 0.5em;
+}
+
+#portfolio a img {
+	text-align: center;
+	outline : none;
+	border : 0;
+}
+
+#portfolio a:hover {
+	background: #FFF;
+}
+
+.popup { 
+	position: relative;
+}
+
+.mid {
+	margin-left: 15px;
+	margin-right: 15px;
+	width: 262px !important;
+	padding-left: 6px !important;
+}
+
+.popup span { 
+	display: none;
+}
+
+.popup:hover span { 
+	display: block;
+	position: absolute;
+	z-index:999;	
+	width: 240px;
+	background: rgba(0, 0, 0, 0.85);
+	color: #FFF;
+	font-size: 10pt;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+/* Footer ************************************************************************************/
+
+#footer {
+    width: 100%;
+	overflow: hidden;
+}
+
+#footertext {
+	border-radius: 5px;
+	background: #EEE;
+	padding: 5px 15px 5px 15px;
+	margin-bottom: 15px;
+}
+
+#footertext a {
+	color: #000;
+}
+
+#footertext img {
+	vertical-align:top
+}
+
+.show_tweet {
+	display:inline;
+}
+
+#sociallinks {
+	float:right;
+	position: relative;
+}
+
+.sociallink {
+	text-indent: -9999px;
+	display:block;
+	float:left;
+	margin:0px 0px 15px 15px;
+	width: 32px;
+	height: 32px;
+	border-radius: 2px;
+}
+
+#gmail {background: url('socialIcons/gmail.png');}
+#gmail:hover {background: #EB2D2E url('socialIcons/gmail.png');}
+
+#facebook {background: url('socialIcons/facebook.png');}
+#facebook:hover {background: #3b5998 url('socialIcons/facebook.png');}
+
+#twitter {background: url('socialIcons/twitter.png');}
+#twitter:hover {background: #41abe1 url('socialIcons/twitter.png');}
+
+#linkedin {background: url('socialIcons/linkedin.png');}
+#linkedin:hover {background: #006699 url('socialIcons/linkedin.png');}
+
+#googleplus {background: url('socialIcons/googleplus.png');}
+#googleplus:hover {background: #e46145 url('socialIcons/googleplus.png');}
+
+#skype {background: url('socialIcons/skype.png');}
+#skype:hover {background: #00adef url('socialIcons/skype.png');}
+
+#steam {background: url('socialIcons/steam.png');}
+#steam:hover {background: #494e48 url('socialIcons/steam.png');}
+
+#xbox {background: url('socialIcons/xbox.png');}
+#xbox:hover {background: #95c343 url('socialIcons/xbox.png');}
+
+#blog {background: url('socialIcons/rss.png');}
+#blog:hover {background: #FFA500 url('socialIcons/rss.png');}
+
+#youtube {background: url('socialIcons/youtube.png');}
+#youtube:hover {background: #AF2B26 url('socialIcons/youtube.png');}
+
+/* Validation and Extras *********************************************************************/
+
+#validation, #validation a {
+	text-align:right;
+	font-size: 8pt;
+	color: #EEE;
+}
+
+#validation a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+#themeChooser {
+	height: 16px;	
+	position:absolute;
+	top:16px;
+    right:16px;
+	overflow: hidden;
+}
+
+.themeButton {
+	height: 14px;
+	width: 14px;
+	margin-left:4px;
+	float: left;
+	text-indent: -9999px;
+	border-radius: 2px;
+	border: 1px solid #EEE;
+}
+
+#red {
+	background: #B00 !important;
+}
+
+#blue {
+	background: #00B !important;
+}
+
+#green {
+	background: #111 !important;
+	border: 1px solid #0B0 !important;
+}
+

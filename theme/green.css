@@ -1,0 +1,66 @@
+@import url('style.css');
+
+body {
+	background: #000 !important;
+	color: #080 !important;
+	font-family: monospace;
+}
+
+#content {
+	background: #000 !important;
+	color: #080 !important;
+}
+
+#logo {
+	background: url('greenLogo.png') no-repeat !important;
+}
+
+.popup:hover span { 
+	color: #0B0;
+}
+
+#header h1 {
+	padding-top: 16px;
+	font-size: 24px !important;
+}
+	
+#footertext {
+		color: #080;
+}
+
+#name a {
+	color: #090 !important;
+}
+
+#name a:hover {
+	color: #0C0 !important;
+}
+
+#portfolio a:hover {
+	background: #040;
+}
+
+
+.popup span { 
+	display: none;
+	background: #080;
+}
+
+#content p a {
+	color: #0B0 !important;
+}
+
+#content p a:hover {
+	color: #0C0 !important;
+}
+
+a.show_tweet {
+	color: #080 !important;
+}
+
+#portfolio  a, .popup:hover span, #footertext, .sociallink, #themeButton, #container, #content {
+	border-radius: 0px !important;
+	border: 1px solid #080 !important;
+	background: #000;
+	color: #080 !important;
+}

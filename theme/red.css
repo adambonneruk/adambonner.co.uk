@@ -1,0 +1,29 @@
+@import url('style.css');
+
+body {
+	background: #300 url('redGradient.png') !important;
+}
+
+#logo {
+	background: url('redLogo.png') no-repeat !important;
+}
+
+#name a {
+	color: #EE9000 !important;
+}
+
+#name a:hover {
+	color: #FFBC55 !important;
+}
+
+#content p a {
+	color: #800 !important;
+}
+
+#content p a:hover {
+	color: #E00 !important;
+}
+
+a.show_tweet {
+	color: #800 !important;
+}
