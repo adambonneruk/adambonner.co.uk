@@ -1,0 +1,57 @@
+;;
+;; Domain:     adambonner.co.uk.
+;; Exported:   2023-03-12 19:27:51
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+adambonner.co.uk	3600	IN	SOA	jarred.ns.cloudflare.com dns.cloudflare.com 2043031587 10000 2400 604800 3600
+
+;; NS Records
+adambonner.co.uk.	86400	IN	NS	jarred.ns.cloudflare.com.
+adambonner.co.uk.	86400	IN	NS	lady.ns.cloudflare.com.
+
+;; A Records
+adambonner.co.uk.	1	IN	A	185.199.108.153
+adambonner.co.uk.	1	IN	A	185.199.109.153
+adambonner.co.uk.	1	IN	A	185.199.110.153
+adambonner.co.uk.	1	IN	A	185.199.111.153
+
+;; AAAA Records
+adambonner.co.uk.	1	IN	AAAA	2606:50c0:8000::153
+adambonner.co.uk.	1	IN	AAAA	2606:50c0:8001::153
+adambonner.co.uk.	1	IN	AAAA	2606:50c0:8002::153
+adambonner.co.uk.	1	IN	AAAA	2606:50c0:8003::153
+
+;; CNAME Records
+www.adambonner.co.uk.	1	IN	CNAME	adambonneruk.github.io.
+
+;; MX Records
+adambonner.co.uk.	1	IN	MX	5 alt1.aspmx.l.google.com.
+adambonner.co.uk.	1	IN	MX	1 aspmx.l.google.com.
+adambonner.co.uk.	1	IN	MX	10 alt3.aspmx.l.google.com.
+adambonner.co.uk.	1	IN	MX	5 alt2.aspmx.l.google.com.
+adambonner.co.uk.	1	IN	MX	10 alt4.aspmx.l.google.com.
+
+;; TXT Records
+adambonner.co.uk.	1	IN	TXT	"v=spf1 include:_spf.google.com ~all"
+google._domainkey.adambonner.co.uk.	1	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArgpCTWP2/ZCvlYBVuQAoTA8pcgWiFl4qmUOp6sDV3eIgpMenQSREil9N76xB7/bRWZgEFexepz5mSwnDGZlmHtKYcvEhobCOSymXEYB+S6gtdHaFvXevyUvicmBxUsFz8Cqyfz6VhkPFFxhgTEyrK6jTUD4NxAZixX1kdukLyfgFaWxqIsbtteh5/OCTpE3jyiesgirydMQgZO3g//akS1p1QJ6oGH/9CQ6hETRLDg3PMqJYc3cjSbU1oeLObi2WWZTKc1O+e9kjeZsTVNj8z3xPvwWc9nDXZvgIFw0X4HnDcdBQyiopADKRiX2yxE9fPaIdYv4LXBKlP11lAh9PrwIDAQAB"
